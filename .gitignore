@@ -1,0 +1,12 @@
+.venv
+.env
+.idea
+__pycache__
+dist/
+build/
+.pytest_cache/
+.coverage
+htmlcov/
+.DS_Store
+Thumbs.db
+.junie/
