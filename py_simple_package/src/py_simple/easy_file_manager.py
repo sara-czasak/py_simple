@@ -69,7 +69,7 @@ def add_a_line(filename: str, line: str):
 
 def read_file_to_list(filename: str):
     """
-        Read lines of existing file to list.
+        Reads lines of existing file to list.
 
         Args:
             filename (str): File to read from.
@@ -91,7 +91,27 @@ def read_file_to_list(filename: str):
             return clean_lines
         except FileNotFoundError:
             print(f"\nFile '{filename}' not found.")
+            return []
     else:
         raise InvalidExtension(
             f"\n'{ext}' is not a valid extension. Please enter a valid extension and try again.\nVALID EXTENSIONS: {VALID_EXTENSIONS}")
 
+
+def remove_file(filename: str):
+    """
+        Removes file from current working directory.
+
+        Args:
+            filename (str): File to delete.
+
+        Example:
+            remove_file("new_file.txt")
+        """
+    ext = filename.split('.')[-1].lower()
+    if ext in VALID_EXTENSIONS:
+        if is_file_there(filename):
+            os.remove(filename)
+        else:
+            print(f"File {filename} does not exist")
+    else:
+        raise InvalidExtension(f"\n'{ext}' is not a valid extension. Please enter a valid extension and try again.\nVALID EXTENSIONS: {VALID_EXTENSIONS}")
