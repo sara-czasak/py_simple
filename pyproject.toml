@@ -10,6 +10,7 @@ authors = [
 ]
 description = "A package to make complex python functionality simple"
 readme = "README.md"
+license = {file = "LICENSE.md"}
 requires-python = ">=3.7"
 classifiers = [
     "Programming Language :: Python :: 3",
