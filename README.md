@@ -3,8 +3,13 @@
 
 I created `Py_simple` as a wrapper package to help beginners and developers perform common tasks using simple, intuitive functions. My goal is to remove the need for memorizing complex flags or writing repetitive boilerplate code.
 
+---
+
+## 🛠️ Module Menu
+*Select a module below to see how to use it!*
+
 <details>
-<summary><span style="font-size: 1.75em; font-weight: 800;">📂 Easy File Manager (Click to Expand)</span></summary>
+<summary><span style="font-size: 1.75em; font-weight: 800;">📂 Easy File Manager</span></summary>
 The `easy_file_manager` module simplifies how you interact with files in your current working directory.
 
 ### Supported File Types
@@ -48,7 +53,7 @@ Safely changes a filename. It won't let you rename a file if the new name is alr
 </details>
 
 <details>
-<summary><span style="font-size: 1.75em; font-weight: 800;">🕰️ Easy Date Formatter (Click to Expand)</span></summary>
+<summary><span style="font-size: 1.75em; font-weight: 800;">🕰️ Easy Date Formatter</span></summary>
 The `easy_date_formatter` module takes the guesswork out of Python's `datetime` module. No more memorizing `%d`, `%m`, or `%Y` codes!
 
 ### Quick Start
@@ -81,6 +86,8 @@ All functions return a **string**. Functions starting with `past_` require a `nu
 - `slash_mm_dd_yyyy()` / `past_slash_mm_dd_yyyy(days)`
 - 
 </details>
+
+---
 
 
 ## 🤝 Contributing
