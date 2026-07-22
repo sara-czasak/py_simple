@@ -10,6 +10,9 @@ I created `Py_simple` as a wrapper package to help beginners and developers perf
 
 <details>
 <summary><span style="font-size: 1.75em; font-weight: 800;">📂 Easy File Manager</span></summary>
+
+## 📂 Easy File Manager
+
 The `easy_file_manager` module simplifies how you interact with files in your current working directory.
 
 ### Supported File Types
@@ -54,6 +57,9 @@ Safely changes a filename. It won't let you rename a file if the new name is alr
 
 <details>
 <summary><span style="font-size: 1.75em; font-weight: 800;">🕰️ Easy Date Formatter</span></summary>
+
+## 🕰️ Easy Date Formatter
+
 The `easy_date_formatter` module takes the guesswork out of Python's `datetime` module. No more memorizing `%d`, `%m`, or `%Y` codes!
 
 ### Quick Start
