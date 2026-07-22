@@ -12,7 +12,7 @@ class InvalidExtension(Exception):
         super().__init__(self.message)
 
 
-def is_valid_extension(extension):
+def _is_valid_extension(extension):
     """Check if extension is valid"""
     return extension in VALID_EXTENSIONS
 
@@ -44,7 +44,7 @@ def make_blank_file(filename: str, file_extension: str):
         Example:
             make_blank_file("new_file", "txt")
         """
-    if is_valid_extension(file_extension.lower()):
+    if _is_valid_extension(file_extension.lower()):
         file = f"{filename}.{file_extension.lower()}"
         if is_file_there(file):
             print(f"File {file} already exists in current working directory.")
@@ -68,7 +68,7 @@ def add_a_line(filename: str, line: str):
             add_a_line("new_file.txt", "hello world!")
         """
     ext = filename.split('.')[-1].lower()
-    if is_valid_extension(ext):
+    if _is_valid_extension(ext):
         with open(filename, 'a', encoding='utf-8') as f:
             f.write(line + '\n')
     else:
@@ -89,7 +89,7 @@ def read_file_to_list(filename: str):
             read_file_to_list("new_file.txt")
         """
     ext = filename.split('.')[-1].lower()
-    if is_valid_extension(ext):
+    if _is_valid_extension(ext):
         clean_lines = []
         try:
             with open(filename, 'r', encoding='utf-8') as f:
@@ -116,7 +116,7 @@ def remove_file(filename: str):
             remove_file("new_file.txt")
         """
     ext = filename.split('.')[-1].lower()
-    if is_valid_extension(ext):
+    if _is_valid_extension(ext):
         if is_file_there(filename):
             os.remove(filename)
         else:
@@ -138,7 +138,7 @@ def rename_file(old_name: str, new_name: str):
         """
     ext_old = old_name.split('.')[-1].lower()
     ext_new = new_name.split('.')[-1].lower()
-    if is_valid_extension(ext_old) and is_valid_extension(ext_new):
+    if _is_valid_extension(ext_old) and _is_valid_extension(ext_new):
         if is_file_there(old_name):
             if not is_file_there(new_name):
                 os.rename(old_name, new_name)
