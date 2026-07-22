@@ -65,3 +65,33 @@ def add_a_line(filename: str, line: str):
             f.write(line + '\n')
     else:
         raise InvalidExtension(f"\n'{ext}' is not a valid extension. Please enter a valid extension and try again.\nVALID EXTENSIONS: {VALID_EXTENSIONS}")
+
+
+def read_file_to_list(filename: str):
+    """
+        Read lines of existing file to list.
+
+        Args:
+            filename (str): File to read from.
+
+        Returns:
+            list: List of lines.
+
+        Example:
+            read_file_to_list("new_file.txt")
+        """
+    ext = filename.split('.')[-1].lower()
+    if ext in VALID_EXTENSIONS:
+        clean_lines = []
+        try:
+            with open(filename, 'r', encoding='utf-8') as f:
+                lines = f.readlines()
+            for line in lines:
+                clean_lines.append(line.strip())
+            return clean_lines
+        except FileNotFoundError:
+            print(f"\nFile '{filename}' not found.")
+    else:
+        raise InvalidExtension(
+            f"\n'{ext}' is not a valid extension. Please enter a valid extension and try again.\nVALID EXTENSIONS: {VALID_EXTENSIONS}")
+
