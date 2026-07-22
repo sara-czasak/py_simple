@@ -3,7 +3,8 @@
 
 I created `Py_simple` as a wrapper package to help beginners and developers perform common tasks using simple, intuitive functions. My goal is to remove the need for memorizing complex flags or writing repetitive boilerplate code.
 
-## 📂 Easy File Manager
+<details>
+<summary><span style="font-size: 1.5em; font-weight: bold;">📂 Easy File Manager (Click to Expand)</span></summary>
 The `easy_file_manager` module simplifies how you interact with files in your current working directory.
 
 ### Supported File Types
@@ -44,6 +45,43 @@ Safely deletes a file after checking if it exists.
 
 #### `rename_file(old_name, new_name)`
 Safely changes a filename. It won't let you rename a file if the new name is already taken!
+</details>
+
+<details>
+<summary><span style="font-size: 1.5em; font-weight: bold;">🕰️ Easy Date Formatter (Click to Expand)</span></summary>
+The `easy_date_formatter` module takes the guesswork out of Python's `datetime` module. No more memorizing `%d`, `%m`, or `%Y` codes!
+
+### Quick Start
+```python
+from py_simple import get_pretty_date, past_dd_mm_yyyy
+
+# 1. Get a human-readable date
+print(get_pretty_date()) 
+# Output: Monday, July 20, 2026
+
+# 2. Get a date from 7 days ago in a specific format
+last_week = past_dd_mm_yyyy(7)
+print(last_week) 
+# Output: 13-07-2026
+```
+
+### API Reference
+All functions return a **string**. Functions starting with `past_` require a `num_days_ago` (integer) argument.
+
+#### Human-Friendly Dates
+- `get_pretty_date()`: Returns `Weekday, Month Day, Year`.
+- `get_past_pretty_date(days)`: Returns a past date in the same pretty format.
+
+#### Hyphenated Formats (DD-MM-YYYY or MM-DD-YYYY)
+- `dd_mm_yyyy()` / `past_dd_mm_yyyy(days)`
+- `mm_dd_yyyy()` / `past_mm_dd_yyyy(days)`
+
+#### Slashed Formats (DD/MM/YYYY or MM/DD/YYYY)
+- `slash_dd_mm_yyyy()` / `past_slash_dd_mm_yyyy(days)`
+- `slash_mm_dd_yyyy()` / `past_slash_mm_dd_yyyy(days)`
+- 
+</details>
+
 
 ## 🤝 Contributing
 I would love to have your help in making Python simpler for everyone! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to suggest new features or report bugs.
