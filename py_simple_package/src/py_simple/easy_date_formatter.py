@@ -3,7 +3,6 @@ easy_date_formatter is meant to simplify getting formatted dates.
 built on top of the datetime module.
 """
 
-
 from datetime import datetime, timedelta
 
 
