@@ -1,3 +1,7 @@
+"""
+easy_file_manager is meant to simplify working with files.
+"""
+
 import os
 
 
@@ -39,7 +43,8 @@ def make_blank_file(filename: str, file_extension: str):
 
         Args:
             filename (str): The name of the file to be created.
-            file_extension (str): The extension of the file to be created without including '.'. Allowed extensions are: ['txt', 'csv', 'md', 'log']
+            file_extension (str): The extension of the file to be created without including '.'.
+            Allowed extensions are: ['txt', 'csv', 'md', 'log']
 
         Example:
             make_blank_file("new_file", "txt")
@@ -52,7 +57,10 @@ def make_blank_file(filename: str, file_extension: str):
             with open(file, 'w', encoding='utf-8'):
                 pass
     else:
-        raise InvalidExtension(f"\n'{file_extension}' is not a valid extension. Please enter a valid extension and try again.\nVALID EXTENSIONS: {VALID_EXTENSIONS}")
+        raise InvalidExtension(f"""
+        \n'{file_extension}' is not a valid extension.
+        Please enter a valid extension and try again.
+        \nVALID EXTENSIONS: {VALID_EXTENSIONS}""")
 
 
 def add_a_line(filename: str, line: str):
@@ -72,7 +80,9 @@ def add_a_line(filename: str, line: str):
         with open(filename, 'a', encoding='utf-8') as f:
             f.write(line + '\n')
     else:
-        raise InvalidExtension(f"\n'{ext}' is not a valid extension. Please enter a valid extension and try again.\nVALID EXTENSIONS: {VALID_EXTENSIONS}")
+        raise InvalidExtension(f"""\n'{ext}' is not a valid extension.
+        Please enter a valid extension and try again.
+        \nVALID EXTENSIONS: {VALID_EXTENSIONS}""")
 
 
 def read_file_to_list(filename: str):
@@ -102,7 +112,9 @@ def read_file_to_list(filename: str):
             return []
     else:
         raise InvalidExtension(
-            f"\n'{ext}' is not a valid extension. Please enter a valid extension and try again.\nVALID EXTENSIONS: {VALID_EXTENSIONS}")
+            f""""\n'{ext}' is not a valid extension.
+            Please enter a valid extension and try again.\n
+            VALID EXTENSIONS: {VALID_EXTENSIONS}""")
 
 
 def remove_file(filename: str):
@@ -122,7 +134,9 @@ def remove_file(filename: str):
         else:
             print(f"File {filename} does not exist!")
     else:
-        raise InvalidExtension(f"\n'{ext}' is not a valid extension. Please enter a valid extension and try again.\nVALID EXTENSIONS: {VALID_EXTENSIONS}")
+        raise InvalidExtension(f"""\n'{ext}' is not a valid extension.
+        Please enter a valid extension and try again.\n
+        VALID EXTENSIONS: {VALID_EXTENSIONS}""")
 
 
 def rename_file(old_name: str, new_name: str):
@@ -148,5 +162,6 @@ def rename_file(old_name: str, new_name: str):
             print(f"File {old_name} does not exist in current working directory.")
     else:
         raise InvalidExtension(
-            f"\n'{ext_old}' or '{ext_new}' is not a valid extension. Please enter a valid extension and try again.\nVALID EXTENSIONS: {VALID_EXTENSIONS}")
-
+            f"""\n'{ext_old}' or '{ext_new}' is not a valid extension.
+            Please enter a valid extension and try again.
+            \nVALID EXTENSIONS: {VALID_EXTENSIONS}""")
