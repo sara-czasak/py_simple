@@ -99,5 +99,13 @@ All functions return a **string**. Functions starting with `past_` require a `nu
 ## 🤝 Contributing
 I would love to have your help in making Python simpler for everyone! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to suggest new features or report bugs.
 
+## 🌟 Hall of Fame
+A huge thank you to the wonderful people who have helped build `Py_simple`:
+
+- **Sara Czasak** (Creator)
+- **[Contributor Name/Handle]** (Major features & Refactoring)
+
+See the full list of contributions in [CONTRIBUTORS.md](CONTRIBUTORS.md)!
+
 ## ⚖️ License
-This project is licensed under the **MIT License**. You are free to use, modify, and distribute it! See the [LICENSE](LICENSE.md) file for the full legal text.
+This project is licensed under the **MIT License**. You are free to use, modify, and distribute it! See the [LICENSE.md](LICENSE.md) file for the full legal text.

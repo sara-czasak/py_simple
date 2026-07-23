@@ -11,31 +11,31 @@ My goal is to keep things intuitive and easy to read.
 ## 🛠️ Step-by-Step Guide for Beginners
 
 If you've never contributed to an open-source project before, here is exactly how to do it:
-
-1. **Fork the Project**: Click the "Fork" button at the top right of this GitHub page. This creates your own copy of the project.
-2. **Get the Clone Link**: 
+1. **Star the Repo**: If you find this project helpful, please give it a ⭐ star! It helps more people find the project and join our community.
+2. **Fork the Project**: Click the "Fork" button at the top right of this GitHub page. This creates your own copy of the project.
+3. **Get the Clone Link**: 
    - On **your fork's** GitHub page, click the green **<> Code** button.
    - Make sure the **HTTPS** tab is selected.
    - Click the little "copy" icon (two overlapping squares) next to the URL to copy it to your clipboard.
-3. **Clone Your Fork**: Open your terminal, type `git clone `, and then paste the link you just copied:
+4. **Clone Your Fork**: Open your terminal, type `git clone `, and then paste the link you just copied:
    ```bash
    git clone https://github.com/YOUR_USERNAME/Py_simple.git
    ```
-4. **Create a Branch**: It's best to do your work on a new branch:
+5. **Create a Branch**: It's best to do your work on a new branch:
    ```bash
    git checkout -b my-new-feature
    ```
-5. **Write Your Code**: Add your awesome new function or fix that bug!
-6. **Commit Your Changes**: Save your progress with a helpful message:
+6. **Write Your Code**: Add your awesome new function or fix that bug!
+7. **Commit Your Changes**: Save your progress with a helpful message:
    ```bash
    git add .
    git commit -m "Added a new helper for list cleaning"
    ```
-7. **Push to GitHub**: Send your changes back to your fork:
+8. **Push to GitHub**: Send your changes back to your fork:
    ```bash
    git push origin my-new-feature
    ```
-8. **Open a Pull Request**: Go to the original `Py_simple` repository on GitHub, and you'll see a button that says "Compare & pull request." Click it and tell me a bit about what you did!
+9. **Open a Pull Request**: Go to the original `Py_simple` repository on GitHub, and you'll see a button that says "Compare & pull request." Click it and tell me a bit about what you did!
 
 ## 💡 What should I contribute?
 - **Report Bugs**: If something isn't working, open an "Issue" and let me know.
