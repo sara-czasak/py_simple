@@ -2,6 +2,8 @@
 
 A massive thank you to everyone who has helped build, refine, and grow `Py_simple`. This project exists to help beginners, and it wouldn't be where it is today without the support of the community.
 
+Remember **always** that you are **valid**, **valuable**, **unique** and **irreplacable**! **You matter more than you know!!**
+
 ## Core Maintainer
 - **Sara Czasak** ([@sara-czasak](https://github.com/sara-czasak))
   - Project creator, lead developer, and documentation lead.
