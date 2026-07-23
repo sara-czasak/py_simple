@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "py_simple"
-version = "0.0.1"
+version = "0.1.0"
 authors = [
   { name="Sara Czasak", email="sara.p.czasak.m@gmail.com" },
 ]
@@ -12,11 +12,41 @@ description = "A package to make complex python functionality simple"
 readme = "README.md"
 license = {file = "LICENSE.md"}
 requires-python = ">=3.7"
+keywords = ["python", "beginner-friendly", "wrapper", "education"]
 classifiers = [
-    "Programming Language :: Python :: 3",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Education",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://github.com/sara-czasak/py_simple"
+Repository = "https://github.com/sara-czasak/py_simple"
+"Bug Tracker" = "https://github.com/sara-czasak/py_simple/issues"
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7.0",
 ]
 
 [tool.setuptools.packages.find]
 where = ["py_simple_package/src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+addopts = "-v --tb=short"
+filterwarnings = [
+    "ignore::DeprecationWarning",
+]
