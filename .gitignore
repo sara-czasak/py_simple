@@ -1,13 +1,36 @@
-.venv
-.env
-.idea
-__pycache__
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+*.egg
 dist/
 build/
-.pytest_cache/
-.coverage
-htmlcov/
+*.whl
+*.tar.gz
+.eggs/
+pip-wheel-metadata/
+
+# Virtual environments
+.venv/
+venv/
+env/
+virtualenv/
+
+# IDE / Editors
+.idea/
+.vscode/
 .DS_Store
 Thumbs.db
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# Project specifics
+.env
 .junie/
 py_simple_ideas.txt
