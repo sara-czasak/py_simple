@@ -103,7 +103,7 @@ I would love to have your help in making Python simpler for everyone! Please see
 A huge thank you to the wonderful people who have helped build `Py_simple`:
 
 - **Sara Czasak** (Creator)
-- **[Contributor Name/Handle]** (Major features & Refactoring)
+- **ghostfix-pm** (Major features & Refactoring)
 
 See the full list of contributions in [CONTRIBUTORS.md](CONTRIBUTORS.md)!
 
