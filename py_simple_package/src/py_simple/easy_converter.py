@@ -43,3 +43,52 @@ def miles_to_km(miles: float):
     return float(f"{miles * 1.60934:.2f}")
 
 
+def fluid_oz_to_milliliters(oz: float, standard = 'us'):
+    """
+    Converts fluid ounces to milliliters. Returns milliliters as a float.
+
+    :param:
+        oz (float) -- fluid ounces
+        standard -- us or uk
+
+    Example:
+        standard = 'us'
+        fluid_oz_to_milliliters(1)
+        (29.6)
+        standard = 'uk'
+        fluid_oz_to_milliliters(1)
+        (28.4)
+
+    """
+    match standard:
+        case "uk":
+            return float(f"{oz * 28.4:.2f}")
+        case "us":
+            return float(f"{oz * 29.6:.2f}")
+    return None
+
+
+def milliliters_to_fluid_oz(milliliters: float, standard = 'us'):
+    """
+        Converts milliliters to fluid ounces. Returns fluid ounces as a float.
+
+        :param:
+            milliliters (float) -- milliliters
+            standard -- us or uk
+
+        Example:
+            standard = 'us'
+            milliliters_to_fluid_oz(1)
+            (0.03)
+            standard = 'uk'
+            milliliters_to_fluid_oz(1)
+            (0.04)
+
+        """
+    match standard:
+        case "uk":
+            return float(f"{milliliters * 0.035:.2f}")
+        case "us":
+            return float(f"{milliliters * 0.034:.2f}")
+    return None
+

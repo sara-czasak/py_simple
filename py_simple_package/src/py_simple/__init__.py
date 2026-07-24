@@ -13,5 +13,7 @@ from .easy_date_formatter import (
 from .easy_converter import (
     seconds_to_hh_mm_ss,
     miles_to_km,
-    km_to_mile
+    km_to_mile,
+    fluid_oz_to_milliliters,
+    milliliters_to_fluid_oz
 )
