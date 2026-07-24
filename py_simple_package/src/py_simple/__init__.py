@@ -14,6 +14,6 @@ from .easy_converter import (
     seconds_to_hh_mm_ss,
     miles_to_km,
     km_to_mile,
-    fluid_oz_to_milliliters,
-    milliliters_to_fluid_oz
+    fluid_oz_to_ml,
+    ml_to_fluid_oz
 )
