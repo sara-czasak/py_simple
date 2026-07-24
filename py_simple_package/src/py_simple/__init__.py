@@ -10,3 +10,8 @@ from .easy_date_formatter import (
     slash_mm_dd_yyyy, past_slash_mm_dd_yyyy, future_slash_mm_dd_yyyy,
     list_available_formats,
 )
+from .easy_converter import (
+    seconds_to_hh_mm_ss,
+    miles_to_km,
+    km_to_mile
+)
