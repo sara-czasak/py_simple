@@ -57,10 +57,10 @@ def fluid_oz_to_ml(oz: float, standard = 'us'):
 
     Example:
         standard = 'us'
-        fluid_oz_to_milliliters(1)
+        fluid_oz_to_ml(1)
         (29.6)
         standard = 'uk'
-        fluid_oz_to_milliliters(1)
+        fluid_oz_to_ml(1)
         (28.4)
 
     """
@@ -82,10 +82,10 @@ def ml_to_fluid_oz(milliliters: float, standard = 'us'):
 
         Example:
             standard = 'us'
-            milliliters_to_fluid_oz(1)
+            ml_to_fluid_oz(1)
             (0.03)
             standard = 'uk'
-            milliliters_to_fluid_oz(1)
+            ml_to_fluid_oz(1)
             (0.04)
 
         """
