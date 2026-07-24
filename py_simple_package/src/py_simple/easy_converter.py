@@ -1,3 +1,7 @@
+"""
+easy_converter is built to simplify different types of conversions
+"""
+
 from datetime import timedelta
 
 
